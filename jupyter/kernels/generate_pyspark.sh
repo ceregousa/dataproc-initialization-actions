@@ -21,7 +21,7 @@ echo "Found PY4J_ZIP: '${PY4J_ZIP}'" >&2
 if (( "${SPARK_MAJOR_VERSION}" >= 2 )); then
   PACKAGES_ARG=''
 else
-  PACKAGES_ARG='--packages com.databricks:spark-csv_2.10:1.3.0'
+  PACKAGES_ARG='--packages com.databricks:spark-csv_2.10:1.3.0, org.mongodb.spark:mongo-spark-connector_2.10:1.1.0'
 fi
 
 cat << EOF
